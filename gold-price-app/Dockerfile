@@ -1,6 +1,6 @@
 FROM node:latest as build
 WORKDIR /app
-COPY src/package.json .
+COPY package*.json ./
 RUN yarn install
 COPY . .
 RUN yarn run build
