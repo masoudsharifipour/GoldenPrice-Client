@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'; // فایل CSS سفارشی
+import './App.css';
 
 const MarketDataDashboard = () => {
   const [marketData, setMarketData] = useState({
