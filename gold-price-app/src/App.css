@@ -1,0 +1,117 @@
+/* App.css */
+.market-dashboard {
+  background-color: #0a1419;
+  color: #ffffff;
+  font-family: 'system-ui', '-apple-system', sans-serif;
+  direction: rtl;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background-color: #142028;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand-name {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.nav-list a.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-list a.nav-link:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.card {
+  background-color: #142028;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+  color: #FFD700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.update-time {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.price-item, .crypto-item {
+  transition: background-color 0.3s;
+}
+
+.price-item:hover, .crypto-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.price {
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.positive {
+  color: #4CAF50;
+}
+
+.negative {
+  color: #F44336;
+}
+
+.change-indicator {
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+
+.chart-placeholder {
+  background-color: #0a1419;
+  height: 300px;
+  color: white;
+}
+
+.loading-spinner {
+  color: #FFD700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 0.5rem 0;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+  }
+  
+  .nav-list {
+    gap: 1rem !important;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    font-size: 1rem;
+  }
+}
